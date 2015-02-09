@@ -1,21 +1,17 @@
-// colors
+// color variables
 purple = #7537e4
 gray1 = #ebebeb
 gray2 = #f5f5f5
-aqua = #6ee7ea
 cyan = #66ffff
 
 blog = #77e6eb
 saycheez = #845df1
 isak = #4cdf92
-// numbers
+
+
+// number variables
 side-margin = 11%
 side-margin-wide = 4%
-
-
-// vertical-align()
-
-
 
 
 // fonts
@@ -29,7 +25,6 @@ body
 	font-size 18px
 	font-weight 400
 	color #999
-	// line-height 250%
 	text-align center
 	margin 0 
 	width 100%
@@ -51,8 +46,6 @@ body
 		display inline
 #navbar
 	height 70px
-	
-
 	
 #bg-img
 	background-image url('../i/bg-d.png')
@@ -114,16 +107,19 @@ body
 	.linkedin:last-of-type
 		margin-left 10px
 
+
+// about section styles
 #about
 	background-color gray1
 
+
+// project section styles
 #projects
 	background-color gray2
 	padding 75px side-margin-wide
 	ul
 		width 100%
 		li
-			// height 30em
 			width 31%
 			a
 				display inline-block
@@ -177,7 +173,8 @@ body
 
 	a:hover .projectinfo
 		opacity 1		
-		
+
+// the gradient overlay on hover of project images		
 #isak 
 	background-color isak
 	background-color: rgba(76, 223, 146, 0.75);
@@ -212,8 +209,9 @@ body
 	transition: all 0.2s linear;
 	-webkit-transform: translate3d(0, 0, 0);
 
+//there are no styles specifically for the "hire us section"
 
-
+//footer styles
 #footer 
 	background-color purple
 	color white
@@ -261,7 +259,7 @@ h4
 	
 
 /// MEDIA QUERY MIN WIDTH
-
+// this hides the social icons in the footer, which are only needed for smaller screen sizes
 @media (min-width: 550px)
 	ul.social.mobile
 		display none
@@ -270,8 +268,6 @@ h4
 /// MEDIA QUERY 710
 
 @media (max-width: 710px) 
-	
-
 	#footer
 		padding 75px side-margin
 		li
