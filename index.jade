@@ -1,0 +1,112 @@
+doctype html
+html(lang="en")
+	head
+		title Coral, a student agency at KU
+		link(href="css/style.css", rel="stylesheet", type="style/css")
+		link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700', rel='stylesheet', type='text/css')
+		script(src="http://code.jquery.com/jquery-2.1.0.min.js")
+		meta(name='viewport', content='width=device-width, height=device-height, initial-scale=1')
+		meta(name="description" content="Student learning group at the University of Kansas. Web design and development agency serving Lawrence and Kansas City.")
+		link(rel="shortcut icon" href="http://builtbycoral.com/favicon.ico")
+		//- link(rel="shortcut icon" href="favicon.ico")
+	body
+		#bg-img
+			#navbar
+				.logo.navbar
+					img(src="i/coral.svg" alt="Coral Logo")
+				#mainnav
+					ul.nav.navbar
+						li 
+							a(href="#projects") past projects
+						li 
+							a(href="#footer") contact
+				ul.social.navbar
+					li 
+						a.twitter(href="http://twitter.com/builtbycoral")
+						a.linkedin(href="https://www.linkedin.com/company/coral-llc")
+
+			section#top 
+				h1 A design and development agency and learning group for students at the University of Kansas
+				img(src='i/waves.png')
+
+		section#about
+			h2 We're always welcoming new members
+			p We want to help students with the knowledge and skills to build their own ideas and to become more valuable to companies who recognize the growing importance of design and technology. Being a member of Coral is a great way to supplement your classroom education, collaborate with great people, and work on projects for your portfolio. Students of any major or experience level are welcome; you'll learn with us! We have lessons and worknights every Thursday evening. 
+
+		section#projects
+			h2 Past projects
+			ul
+				li.blog
+					a(href="http://blog.business.ku.edu") 
+						//- img(src="i/blog.png")
+						#blog.projectinfo
+							.pitxt
+								h3 Business School Blog
+				li.saycheez
+					a(href="http://saycheezlawrence.com")
+						//- img(src="i/saycheez.png")
+						#saycheez.projectinfo
+							.pitxt
+								h3 Say Cheez Lawrence 
+
+				li.isak
+					a(href="http://isak.business.ku.edu")
+						//- img(src="i/isak.png")
+						#isak.projectinfo
+							.pitxt
+								h3 Information Systems Club
+						
+
+		section#hireus
+			h2 Hire us!
+			p We love building things for the community and making connections with companies, organizations, and startups. We specialize in web projects but are open to all design and/or development projects as well (apps, print design, branding, etc.). 
+
+		section#footer
+			.footer
+				img(src="i/coral.svg" alt="Coral Logo")
+			
+			.footer
+				h4 In the news
+				ul
+					li
+						a.coverage(href="http://siliconprairienews.com/2014/07/get-to-know-the-five-finalists-for-student-entrepreneur-of-the-year/") Finalist for Student Entrepreneur of the Year<br>
+					li
+						a.coverage(href="http://issuu.com/kubusiness/docs/dean_s_report/17?e=5545359/9501138") B-School Dean's Report (p. 30)
+					li
+						a.coverage(href="http://siliconprairienews.com/2014/05/ku-students-collaborate-to-form-experimental-digital-agency/") Q&amp;A with SPN
+			.footer 
+				h4 Contact
+				p Talk to us about joining or working with us at 
+					a(href="mailto:hello@builtbycoral.com") hello<span>@</span>builtbycoral.com
+			ul.social.mobile
+				li 
+					a.twitter(href="http://twitter.com/builtbycoral")
+					a.linkedin(href="https://www.linkedin.com/company/coral-llc")
+
+
+		script.
+			var pheight = ($('#projects li a').width()) * 0.8;
+			$('.projectinfo').css("height", + pheight);
+			$('#projects li').css("height", + pheight);
+
+			//- $('#projects li a').css("height", + pheight);
+			
+
+			// my new favorite block of code!
+			$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			        || location.hostname == this.hostname) {
+
+			        var target = $(this.hash);
+			        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			           if (target.length) {
+			             $('html,body').animate({
+			                 scrollTop: target.offset().top
+			            }, 1000);
+			            return false;
+			        }
+			    }
+			});
+			
+			
+

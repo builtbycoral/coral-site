@@ -1,0 +1,352 @@
+// colors
+purple = #7537e4
+gray1 = #ebebeb
+gray2 = #f5f5f5
+aqua = #6ee7ea
+cyan = #66ffff
+
+blog = #77e6eb
+saycheez = #845df1
+isak = #4cdf92
+// numbers
+side-margin = 11%
+side-margin-wide = 4%
+
+
+// vertical-align()
+
+
+
+
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700)
+
+html 
+	width 100%
+
+body
+	font-family 'Cabin', sans-serif
+	font-size 18px
+	font-weight 400
+	color #999
+	// line-height 250%
+	text-align center
+	margin 0 
+	width 100%
+	letter-spacing 1px
+	p
+		line-height 250%
+
+	section
+		padding 75px side-margin
+		
+		h2
+			color #000
+	ul
+		-webkit-padding-start 0
+		-webkit-margin-before 0
+		-webkit-margin-after 0 
+	li
+		list-style-type none
+		display inline
+#navbar
+	height 70px
+	
+
+	
+#bg-img
+	background-image url('../i/bg-d.png')
+	color #fff
+	padding-top 50px
+	position relative
+	
+	h1 
+		max-width 660px
+		font-size 35px
+		margin 40px auto 
+		line-height 170%
+		letter-spacing 3px
+
+		
+	.logo 
+		float left
+		margin-left side-margin	
+		img
+			height 70px
+
+		
+	.nav 
+		li:last-of-type
+			margin-left 20px	
+		a
+			color white
+			text-transform uppercase
+			font-size 15px
+			letter-spacing 2px
+			text-decoration none
+			transition color 0.3s linear
+		a:hover
+			color cyan
+	
+#mainnav
+	display inline-table
+	height 70px
+	.nav
+		display table-cell
+		vertical-align middle
+
+.social
+	float right
+	margin-right side-margin
+	a
+		display inline-block
+		height 40px
+		width 40px
+		margin-top 15px
+		background-size 100%
+		background-repeat no-repeat
+
+	a.twitter
+		background-image url('../i/twitter.svg')
+	a.linkedin
+		background-image url('../i/linkedin.svg')
+
+	.linkedin:last-of-type
+		margin-left 10px
+
+#about
+	background-color gray1
+
+#projects
+	background-color gray2
+	padding 75px side-margin-wide
+	ul
+		width 100%
+		li
+			// height 30em
+			width 31%
+			a
+				display inline-block
+				width 31%
+				margin 10px 10px 0 0
+				min-width 300px
+				background-repeat no-repeat
+				background-position center bottom 
+				background-size contain
+			
+	img 
+		width 100%
+
+	li.isak a
+		background-image url('../i/isak.png') 
+		background-color isak
+		margin-right 0
+	li.saycheez a
+		background-image url('../i/saycheez.png') 
+		background-color saycheez
+	li.blog a 
+		background-image url('../i/blog.png') 
+		background-position bottom right
+		background-color blog
+		
+
+	h3
+		line-height 160%
+		text-transform uppercase
+		font-weight 400
+		font-size 17px
+		letter-spacing 2px
+
+	a .projectinfo
+		opacity 0
+		transition all 0.3s ease
+		display inline-block
+		width 100%
+		color white
+		
+		
+	.pitxt
+		width 90%
+		margin 0 auto
+		position relative
+		top 45%
+		-webkit-transform translateY(-55%)
+		-ms-transform translateY(-55%)
+		transform translateY(-55%)
+	
+
+	a:hover .projectinfo
+		opacity 1		
+		
+#isak 
+	background-color isak
+	background-color: rgba(76, 223, 146, 0.75);
+	background-color: rgba(76, 223, 146, 0.5);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(76, 223, 146, 0.2)), color-stop(100%, isak 80%));
+	background-image: -webkit-linear-gradient(rgba(76, 223, 146, 0.5), isak 80%);
+	background-image: linear-gradient(rgba(76, 223, 146, 0.5), isak 80%);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-transform: translate3d(0, 0, 0);
+#saycheez
+	background-color saycheez
+	background-color: rgba(132, 93, 241, 0.75);
+	background-color: rgba(132, 93, 241, 0.5);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(132, 93, 241, 0.2)), color-stop(100%, saycheez));
+	background-image: -webkit-linear-gradient(rgba(132, 93, 241, 0.5), saycheez);
+	background-image: linear-gradient(rgba(132, 93, 241, 0.5), saycheez);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-transform: translate3d(0, 0, 0);
+#blog
+	background-color blog	
+	background-color: rgba(119, 230, 235, 0.75);
+	background-color: rgba(119, 230, 235, 0.5);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(119, 230, 235, 0.2)), color-stop(100%, blog 80%));
+	background-image: -webkit-linear-gradient(rgba(119, 230, 235, 0.5), blog 80%);
+	background-image: linear-gradient(rgba(119, 230, 235, 0.5), blog 80%);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-transform: translate3d(0, 0, 0);
+
+
+
+#footer 
+	background-color purple
+	color white
+	padding 75px side-margin-wide
+	text-align center
+	font-size 14px
+	li
+		display block
+		margin-bottom 10px
+	a 
+		color white
+		line-height 25px
+		transition color 0.3s linear
+		text-decoration none
+		border-bottom 1px solid 
+				
+		span 
+			font-weight 400
+			font-family verdana, sans serif
+	a:hover 
+			color cyan
+			
+	.footer
+		display inline-block
+		max-width 30%
+		margin-right 8%
+		text-align left
+		vertical-align top
+		img
+			margin-left 10px
+
+	
+	.footer:last-of-type
+		margin-right 0
+	p
+		-webkit-margin-before 0
+		margin-top 0
+		line-height 180%
+h4
+	margin-bottom 10px
+	font-size 12px
+	text-transform uppercase
+.coverage 
+	margin-bottom 10px
+	
+
+/// MEDIA QUERY MIN WIDTH
+
+@media (min-width: 550px)
+	ul.social.mobile
+		display none
+
+
+/// MEDIA QUERY 710
+
+@media (max-width: 710px) 
+	
+
+	#footer
+		padding 75px side-margin
+		li
+			display block
+		.footer
+			display block
+			text-align center
+			width 100%
+			max-width none
+			margin-bottom 30px
+		.footer:first-of-type
+			margin-bottom 10px
+		ul.social
+			margin 0 
+			float none
+			a
+				border-bottom 0
+			a.twitter
+				background-image url('../i/twitter.png')
+			a.linkedin
+				background-image url('../i/linkedin.png')
+			
+
+
+/// MEDIA QUERY 550
+	
+@media (max-width: 550px) 
+
+	body section
+		padding 30px side-margin 40px
+	#navbar		
+		height auto
+		#mainnav
+			height 40px
+		.social
+			display none
+		.logo, .nav
+			display block
+			float none
+			margin 0 auto
+		.logo
+			margin-bottom 15px
+
+	ul.social.mobile
+		display block
+		margin-left -5px
+		
+	body p
+		line-height 180%
+	
+	#bg-img h1
+		margin 0 auto 40px
+
+
+/// MEDIA QUERY 500 
+
+@media (max-width: 650px) 
+	#projects ul li, #projects ul li a 
+		width 90%
+		margin 0 auto !important
+		display block
+		
+	#projects a .projectinfo
+		margin 0 auto !important
+		display block
+		text-align center
+		background-color none
+		
+	body
+		font-size 15px
+	#projects ul li a
+		min-width 0
+
+/// MEDIA QUERY 450 
+
+@media (max-width: 450px) 
+	#bg-img h1
+		font-size 25px

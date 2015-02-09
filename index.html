@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><title>Coral, a student agency at KU</title><link href="css/style.css" rel="stylesheet" type="style/css"><link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet" type="text/css"><script src="http://code.jquery.com/jquery-2.1.0.min.js"></script><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"><link rel="shortcut icon" href="http://builtbycoral.com/favicon.ico"></head><body><div id="bg-img"><div id="navbar"><div class="logo navbar"><img src="i/coral.svg"></div><div id="mainnav"><ul class="nav navbar"><li> <a href="#projects">past projects</a></li><li> <a href="#footer">contact</a></li></ul></div><ul class="social navbar"><li> <a href="http://twitter.com/builtbycoral" class="twitter"></a><a href="https://www.linkedin.com/company/coral-llc" class="linkedin"></a></li></ul></div><section id="top"> <h1>A design and development agency and learning group for students at the University of Kansas</h1><img src="i/waves.png"></section></div><section id="about"><h2>We're always welcoming new members</h2><p>We want to empower students with the knowledge and skills to build their own ideas and to become more valuable to companies who recognize the growing importance of design and technology. Being a member of Coral is a great way to supplement your classroom education, collaborate with great people, and work on projects for your portfolio. Students of any major or experience level are welcome; you'll learn with us! We have lessons and worknights every Thursday evening. </p></section><section id="projects"><h2>Past projects</h2><ul><li class="blog"><a href="http://blog.business.ku.edu"> <div id="blog" class="projectinfo"><div class="pitxt"><h3>Business School Blog</h3></div></div></a></li><li class="saycheez"><a href="http://saycheezlawrence.com"><div id="saycheez" class="projectinfo"><div class="pitxt"><h3>Say Cheez Lawrence </h3></div></div></a></li><li class="isak"><a href="http://isak.business.ku.edu"><div id="isak" class="projectinfo"><div class="pitxt"><h3>Information Systems Club</h3></div></div></a></li></ul></section><section id="hireus"><h2>Hire us!</h2><p>We love building things for the community and making connections with companies, organizations, and startups. We specialize in web design and development but are open to other design and development projects as well. We have a diverse group and love learning!</p></section><section id="footer"><div class="footer"><img src="i/coral.svg"></div><div class="footer"><h4>In the news</h4><ul><li><a href="http://siliconprairienews.com/2014/07/get-to-know-the-five-finalists-for-student-entrepreneur-of-the-year/" class="coverage">Finalist for Student Entrepreneur of the Year<br></a></li><li><a href="http://issuu.com/kubusiness/docs/dean_s_report/17?e=5545359/9501138" class="coverage">B-School Dean's Report (p. 30)</a></li><li><a href="http://siliconprairienews.com/2014/05/ku-students-collaborate-to-form-experimental-digital-agency/" class="coverage">Q&amp;A with SPN</a></li></ul></div><div class="footer"> <h4>Contact</h4><p>Talk to us about joining or working with us at <a href="mailto:hello@builtbycoral.com">hello<span>@</span>builtbycoral.com</a></p></div><ul class="social mobile"><li> <a href="http://twitter.com/builtbycoral" class="twitter"></a><a href="https://www.linkedin.com/company/coral-llc" class="linkedin"></a></li></ul></section><script>var pheight = ($('#projects li a').width()) * 0.8;
+$('.projectinfo').css("height", + pheight);
+$('#projects li').css("height", + pheight);
+
+//- $('#projects li a').css("height", + pheight);
+
+
+// my new favorite block of code!
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});</script></body></html>
