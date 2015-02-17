@@ -86,12 +86,17 @@ body li {
   margin-top: 15px;
   background-size: 100%;
   background-repeat: no-repeat;
+  margin-right: 10px;
 }
 .social a.twitter {
   background-image: url("../i/twitter.svg");
 }
 .social a.linkedin {
   background-image: url("../i/linkedin.svg");
+}
+.social a.github {
+  background-image: url("../i/github.svg");
+  margin-right: 0;
 }
 .social .linkedin:last-of-type {
   margin-left: 10px;
@@ -282,6 +287,9 @@ h4 {
   }
   #footer ul.social a.linkedin {
     background-image: url("../i/linkedin.png");
+  }
+  #footer ul.social a.github {
+    background-image: url("../i/github.png");
   }
 }
 @media (max-width: 550px) {
